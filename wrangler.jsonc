@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "finish-the-race-motorsports",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-10-08",
+  "workers_dev": true,
+  "r2_buckets": [
+    {"binding": "BUCKET", "bucket_name": "finish-the-race-media"}
+  ],
+  "ratelimits": [
+    {"name": "LOGIN_LIMITER", "namespace_id": "412201", "simple": {"limit": 5, "period": 60}},
+    {"name": "FORM_LIMITER", "namespace_id": "412202", "simple": {"limit": 10, "period": 60}}
+  ]
+}

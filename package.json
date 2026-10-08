@@ -1,0 +1,14 @@
+{
+  "name": "finish-the-race-motorsports",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy",
+    "test": "npm run build && node --check worker/client.js && node --test tests/worker.test.mjs"
+  },
+  "devDependencies": {"wrangler": "^4.36.0"}
+}

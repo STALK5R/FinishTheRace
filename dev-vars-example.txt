@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local development only; never commit .dev.vars.
+# Replace both values. Actual production values belong in Cloudflare runtime secrets.
+ADMIN_PASSWORD="replace-with-a-unique-password-at-least-16-characters"
+ADMIN_SESSION_SECRET="replace-with-at-least-32-random-characters"
