@@ -11,4 +11,12 @@
     {"name": "LOGIN_LIMITER", "namespace_id": "412201", "simple": {"limit": 5, "period": 60}},
     {"name": "FORM_LIMITER", "namespace_id": "412202", "simple": {"limit": 10, "period": 60}}
   ]
+"d1_databases": [
+  {
+    "binding": "DB",
+    "database_name": "finish-the-race-fellowship",
+    "database_id": "496e6cef-b96c-41ac-b059-221aba25bd84",
+    "migrations_dir": "migrations"
+  }
+],
 }
